@@ -417,22 +417,43 @@ p{
     }
      
     .imagen2 img{
-         width: 20vw; 
-         margin-left: 5vw;
-         border: black groove 0.2vw;
+        width: 20vw; 
+        margin-left: 5vw;
+        border: black groove 0.2vw;
+       
     }
      
     .imagen3 img{
-         width: 20vw; 
-         margin-left: 5vw;
-         margin:5vw;
-         margin-top: 22vw;
-         border: black groove 0.2vw;
+        width: 20vw; 
+        margin-left: 5vw;
+        margin:5vw;
+        margin-top: 22vw;
+        border: black groove 0.2vw;
+    }
+
+    .imagen1:hover img{
+        transform: scale(1.5,1.5) skewY(5deg);
+        cursor:pointer; 
+        cursor:hand;
+    }
+
+    .imagen2:hover img{
+        transform: scale(1.5,1.5) skewY(-5deg);
+        cursor:pointer; 
+        cursor:hand;
+    }
+
+    .imagen3:hover img{
+        transform: scale(3,3);
+        cursor:pointer; 
+        cursor:hand;
     }
 
     .imagen4{
         width: 90vw; 
         margin-left: 25vw;
+        animation-duration: 3s;
+        animation-name: entradaGladiadores;
     }
 
     .mapa{
@@ -441,6 +462,9 @@ p{
         margin-top: 23vw;
     }
 
+    .mapa:hover{
+        transform: scale(2,2);
+    }
     .concesionarios{
         width: 55vw;
         margin-left: 5vw;
@@ -502,5 +526,15 @@ p{
         font-size: 2vw;
         list-style: none;
     }
-
+    
 }
+
+@keyframes entradaGladiadores{
+    from {
+      margin-left: 100vw;
+    }
+  
+    to {
+      margin-left: 25vw;
+    }
+  }
