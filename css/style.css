@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Rubik Distressed';
-    box-sizing: border-box;
-}
+
 
 html{
     font-size: 62.5%;
@@ -81,7 +76,15 @@ p{
     margin:5vw;
 }
 
+.flechas{
+    width: 5vw;
+    height: 20vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+.indicador{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 .contenedor{
 	display: grid;
@@ -133,6 +136,17 @@ p{
 
 #footer{
 	grid-area: footer;
+}
+
+.navBackColor{
+    background-color: silver;
+    width: 10vw;
+    height: 10vw;
+}
+
+.navLetter{
+    font-family: 'Rubik Distressed', sans-serif;
+    font-weight: 100;
 }
 
 .botones{
@@ -244,14 +258,21 @@ p{
 .formulario{
     width: 80vw;
     margin: 10vw;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(192, 192, 192, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(192, 192, 192, 0.8));
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style: none;
     text-decoration: none;
+    padding: 2vw;
 } 
+
+.letras{
+    font-size: 2.5vw;
+    text-align: center;
+}
+
 
 
 @media (min-width: 768px){
@@ -523,8 +544,9 @@ p{
         margin-left: 5vw;
         width: 55vw;
         margin-top: 0vw;
-        font-size: 2vw;
+        font-size: 2.5vw;
         list-style: none;
+        padding: 2vw;
     }
     
 }
