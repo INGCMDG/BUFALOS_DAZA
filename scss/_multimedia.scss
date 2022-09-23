@@ -1,0 +1,146 @@
+$oscurototal: black;
+$halfvw: 50vw;
+$quartervw: 25vw;
+
+.imagen1 img{
+    width: $halfvw; 
+    margin-left: $quartervw;
+    border: 0.5vw $oscurototal;
+ }
+ 
+ .imagen2 img{
+     width: $halfvw; 
+     margin-left: $quartervw;
+  }
+ 
+ .imagen3 img{
+     width: 90vw; 
+     margin-left: 5vw;
+ }
+ 
+ .imagen4{
+     width: 90vw; 
+     margin-left: $quartervw;
+ }
+ 
+ .video{
+     display:block;
+     background: linear-gradient($oscurototal, rgba(192, 192, 192, 0.5)); 
+     margin:5vw;
+     iframe{
+        width:90vw;
+        height:50.625vw;
+    }
+ } 
+ 
+ .mapa{
+     width: 90vw;
+     margin-left: 5vw;
+ }
+ 
+ .concesionarios{
+     width: 90vw;
+     margin-left: 5vw;
+ }
+
+@media (min-width: 768px){
+
+    .imagen1 img{
+        width: 40vw; 
+        margin-left: 5vw;
+        border: 0.5vw $oscurototal;
+    }
+     
+    .imagen2 img{
+         width: 40vw; 
+         margin-left: 5vw;
+    }
+     
+    .imagen3 img{
+         width: 40vw; 
+         margin-left: 5vw;
+         margin:5vw;
+         margin-top: 16.5vw;
+    }
+
+    .imagen4{
+        width: 90vw; 
+        margin-left: 40vw;
+    }
+
+}
+
+
+@media (min-width: 1024px){
+
+    .imagen1 img{
+        width: 20vw; 
+        margin-left: 2vw;
+        margin-top: $quartervw;
+        border: $oscurototal groove 0.2vw;
+        &:hover{
+            transform: scale(1.5,1.5) skewY(5deg);
+            cursor:pointer; 
+            cursor:hand;
+        }
+    }
+     
+    .imagen2 img{
+        width: 20vw; 
+        margin-left: 2vw;
+        border: $oscurototal groove 0.2vw;
+        &:hover{
+            transform: scale(1.5,1.5) skewY(-5deg);
+            cursor:pointer; 
+            cursor:hand;
+        }
+    }
+     
+    .imagen3 img{
+        width: 20vw; 
+        margin:5vw;
+        margin-left: 2vw;
+        margin-top: 22vw;
+        border: $oscurototal groove 0.2vw;
+        &:hover{
+            transform: scale(3,3);
+            cursor:pointer; 
+            cursor:hand;
+        }
+    }
+
+    .imagen4{
+        width: 90vw; 
+        margin-left: $quartervw;
+        animation-duration: 3s;
+        animation-name: entradaGladiadores;
+    }
+
+    .mapa{
+        width: 20vw;
+        margin-left: 2vw;
+        margin-top: 30vw;
+        &:hover{
+            transform: scale(2,2);
+        }
+    }
+
+    .concesionarios{
+        width: 55vw;
+        margin-left: 2vw;
+        border: $oscurototal groove 0.2vw;
+        margin-bottom: 5vw;
+    }
+
+    .video{
+        margin-top: $halfvw;
+        margin:5vw;
+        height: fit-content;
+        iframe{
+            width:26vw;
+            height:16.875vw;
+            margin:2vw;
+            margin-top: 10vw;
+        }
+    } 
+}

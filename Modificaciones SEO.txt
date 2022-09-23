@@ -1,0 +1,6 @@
+En los archivos html sumé el SEO con las siguientes características:
+
+Keywords: se adicionan keywords "x pulse, taller motorrad, taller motorrad, talleres hero, repuesto hero"
+Titles: Se modifica los title de cada html para que sean distintos
+H1: Los H1 ya son diferentes en cada página
+Description: Se crea una descripcion diferente en cada html

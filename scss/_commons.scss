@@ -7,6 +7,8 @@ $quartervw: 25vw;
 $fuentePrincipal: 'Rubik Distressed', sans-serif;
 $fuenteSecundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $fontWeight1: 100;
+$colores:('rojo': red,'blanco':white,'plata':rgba(192, 192, 192, 1),'negro':black);
+
 
 html{
     font-size: 62.5%;
@@ -14,43 +16,35 @@ html{
 
 body{
     background-image: url(../img/backmotos.jpg);
-    background-repeat: repeat;
+    background-repeat: initial;
     background-attachment: fixed;
     overflow-x: hidden;
 }
 
-h1{
-    font-size: 7.5vw;
+@mixin titulos($tamano,$fondo,$color,$margen){
+    font-size: $tamano;
     width: 90vw;
-    background: linear-gradient($oscurototal, rgba(0, 0, 0, 0.5));
+    background: $fondo;
     text-align: center;
-    color: red;
+    color: $color;
     font-family: $fuentePrincipal;
     font-weight: $fontWeight1;
-    margin:5vw;
+    margin:$margen;
+}
+
+h1{
+    @include titulos(7.5vw,linear-gradient($oscurototal, rgba(0, 0, 0, 0.5)),red,5vw);
     }
 
 h2{
-    font-size: 7.5vw;
-    width: 90vw;
-    background: linear-gradient(rgba(255, 0, 0, 1), rgba(0, 0, 0, 0.5));
-    text-align: center;
-    color: black;
-    font-family: $fuentePrincipal;
-    font-weight: $fontWeight1;
-    margin:5vw;
+    @include titulos(7.5vw,linear-gradient(rgba(255, 0, 0, 1), rgba(0, 0, 0, 0.5)),black,5vw);
 }
 
 h3{
-    font-size: 5vw;
-    width: 90vw;
-    background: linear-gradient($oscurototal, rgba(255, 0, 0, 0.8));
-    text-align: center;
-    color: rgba(192, 192, 192, 0.8);
-    font-family: $fuentePrincipal;
-    font-weight: $fontWeight1;
-    margin:5vw;
+    @include titulos(5vw,linear-gradient($oscurototal, rgba(255, 0, 0, 0.8)),rgba(192, 192, 192, 0.8),5vw);
 }
+
+
 
 h4{
     color: rgba(234, 190, 63, 0.5);
@@ -62,12 +56,9 @@ h4{
 }
 
 h5{
+    @extend h4;
     color: rgba(234, 190, 63, 0.9);
-    font-size: 5vw;
-    font-family: $fuentePrincipal;
-    font-weight: $fontWeight1;
     padding: 2vw;
-    text-align: center;
 }
 
 p{
@@ -79,10 +70,11 @@ p{
     font-family: $fuenteSecundaria;
     font-weight: $fontWeight1;
     margin:5vw;
+    
 }
 
 .backSection{
-    background-color: black;
+    background-color: map-get($map: $colores, $key: 'negro');
 }
 
 .flechas{

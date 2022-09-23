@@ -269,6 +269,14 @@ p {
     list-style: none;
     padding: 2vw;
   }
+  @-webkit-keyframes entradaGladiadores {
+    from {
+      margin-left: 100vw;
+    }
+    to {
+      margin-left: 25vw;
+    }
+  }
   @keyframes entradaGladiadores {
     from {
       margin-left: 100vw;
@@ -460,8 +468,10 @@ p {
   .imagen4 {
     width: 90vw;
     margin-left: 25vw;
-    animation-duration: 3s;
-    animation-name: entradaGladiadores;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: entradaGladiadores;
+            animation-name: entradaGladiadores;
   }
   .mapa {
     width: 20vw;
@@ -480,6 +490,8 @@ p {
   .video {
     margin-top: 50vw;
     margin: 5vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .video iframe {
@@ -488,6 +500,4 @@ p {
     margin: 2vw;
     margin-top: 10vw;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
