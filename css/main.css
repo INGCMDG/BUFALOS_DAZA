@@ -5,7 +5,7 @@ html {
 
 body {
   background-image: url(../img/backmotos.jpg);
-  background-repeat: repeat;
+  background-repeat: initial;
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -43,7 +43,7 @@ h3 {
   margin: 5vw;
 }
 
-h4 {
+h4, h5 {
   color: rgba(234, 190, 63, 0.5);
   font-size: 5vw;
   font-family: "Rubik Distressed", sans-serif;
@@ -54,11 +54,7 @@ h4 {
 
 h5 {
   color: rgba(234, 190, 63, 0.9);
-  font-size: 5vw;
-  font-family: "Rubik Distressed", sans-serif;
-  font-weight: 100;
   padding: 2vw;
-  text-align: center;
 }
 
 p {
@@ -215,7 +211,7 @@ p {
     margin: 5vw;
     border: black groove 0.2vw;
   }
-  h4 {
+  h4, h5 {
     color: rgba(234, 190, 63, 0.5);
     font-size: 5vw;
     width: 30vw;
@@ -284,89 +280,6 @@ p {
     to {
       margin-left: 25vw;
     }
-  }
-}
-.navBackColor {
-  background-color: silver;
-  width: 10vw;
-  height: 10vw;
-}
-
-.navLetter {
-  font-family: "Rubik Distressed", sans-serif;
-  font-weight: 100;
-}
-
-.botones {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: static;
-  top: 0;
-  padding: 2vw;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.botones img {
-  width: 30vw;
-  align-items: center;
-  margin-left: 35vw;
-}
-.botones ul {
-  display: flex;
-  flex-direction: column;
-}
-.botones ul li {
-  background: linear-gradient(black, rgba(192, 192, 192, 0.3));
-  border: 0.2vw solid rgba(234, 190, 63, 0.5);
-  padding: 0.2vw;
-  text-align: center;
-  display: inline-block;
-  margin: 0.5vw;
-}
-.botones ul li a {
-  text-decoration: none;
-  color: #D4AF37;
-  font-weight: 100;
-  font-size: 3vw;
-}
-
-.nav {
-  position: absolute;
-}
-
-@media (min-width: 768px) {
-  .botones img {
-    width: 25vw;
-    height: 25vw;
-    align-items: center;
-    margin-left: 5vw;
-  }
-  .botones ul {
-    display: flex;
-    flex-direction: row;
-  }
-  .botones ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .botones ul li a {
-    font-size: 2.5vw;
-  }
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (min-width: 1024px) {
-  .botones img {
-    width: 20vw;
-    height: 20vw;
-    align-items: center;
-    margin-left: 1vw;
   }
 }
 .imagen1 img {
@@ -499,5 +412,88 @@ p {
     height: 16.875vw;
     margin: 2vw;
     margin-top: 10vw;
+  }
+}
+.navBackColor {
+  background-color: silver;
+  width: 10vw;
+  height: 10vw;
+}
+
+.navLetter {
+  font-family: "Rubik Distressed", sans-serif;
+  font-weight: 100;
+}
+
+.botones {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: static;
+  top: 0;
+  padding: 2vw;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.botones img {
+  width: 30vw;
+  align-items: center;
+  margin-left: 35vw;
+}
+.botones ul {
+  display: flex;
+  flex-direction: column;
+}
+.botones ul li {
+  background: linear-gradient(black, rgba(192, 192, 192, 0.3));
+  border: 0.2vw solid rgba(234, 190, 63, 0.5);
+  padding: 0.2vw;
+  text-align: center;
+  display: inline-block;
+  margin: 0.5vw;
+}
+.botones ul li a {
+  text-decoration: none;
+  color: #D4AF37;
+  font-weight: 100;
+  font-size: 3vw;
+}
+
+.nav {
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .botones img {
+    width: 25vw;
+    height: 25vw;
+    align-items: center;
+    margin-left: 5vw;
+  }
+  .botones ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .botones ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .botones ul li a {
+    font-size: 2.5vw;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .botones img {
+    width: 20vw;
+    height: 20vw;
+    align-items: center;
+    margin-left: 1vw;
   }
 }/*# sourceMappingURL=main.css.map */

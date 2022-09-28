@@ -1,16 +1,16 @@
 {
   "name": "bufalos-daza",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
     "sass:watch": "sass --watch scss/main.scss  css/main.css"
   },
-  "author": "",
+  "author": "CESAR DAZA",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.55.0"
   },
-  "description": ""
+  "description": "Pagina encargada de brindar toda la informacion necesaria a cualquier miembro del club Bufalos Xpulse Colombia"
 }
