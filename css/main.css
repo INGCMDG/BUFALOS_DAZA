@@ -44,7 +44,7 @@ h3 {
 }
 
 h4, h5 {
-  color: rgba(234, 190, 63, 0.5);
+  color: rgba(234, 190, 63, 0.6);
   font-size: 5vw;
   font-family: "Rubik Distressed", sans-serif;
   font-weight: 100;
@@ -215,6 +215,15 @@ p {
     color: rgba(234, 190, 63, 0.5);
     font-size: 5vw;
     width: 30vw;
+  }
+  h5 {
+    color: rgba(234, 190, 63, 0.9);
+    font-size: 5vw;
+    font-family: "Rubik Distressed", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    width: 90vw;
+    padding: 2vw;
   }
   p {
     font-size: 2vw;

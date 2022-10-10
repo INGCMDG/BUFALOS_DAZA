@@ -243,10 +243,19 @@ p{
     h4{
         color: rgba(234, 190, 63, 0.5);
         font-size: 5vw;    
-        width: 30vw;
-        
+        width: 30vw;  
     }
 
+    h5{
+        color: rgba(234, 190, 63, 0.9);
+        font-size: 5vw;
+        font-family: $fuentePrincipal;
+        font-weight: $fontWeight1;
+        text-align: center;
+        width: 90vw;
+        padding: 2vw;
+    }
+    
     p{
         font-size: 2vw;
         width: 25vw;
